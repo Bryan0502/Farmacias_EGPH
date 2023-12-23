@@ -1,0 +1,44 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:137:p, par l {seq {comp label1:::p::p, space :p:88:p, comp jtextIdMedi:::p:100:p}, seq l {par l {comp label2::l:p::p, comp label3::l:p::p}, space u:::p, par l {comp jtextNombreMedi:::p:271:p, comp jtextPrecio:::p:131:p}}}}, seq l {space :p:242:p, comp button1:::p::p}}, space ::162:x}}"
+			"$verticalGroup": "par l {seq l {space :p:26:p, par b {comp label1::b:p::p, comp jtextIdMedi::b:p::p}, space :p:52:p, par l {comp label2:::p::p, comp jtextNombreMedi:::p::p}, space :p:46:p, par b {comp label3::b:p::p, comp jtextPrecio::b:p::p}, space ::47:x, comp button1:::p::p, space :p:49:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "ID"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "jtextIdMedi"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Medicamentos"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "jtextNombreMedi"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Precio"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "jtextPrecio"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "jtextPrecioKeyTyped", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Registrar"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 660, 340 )
+		} )
+	}
+}

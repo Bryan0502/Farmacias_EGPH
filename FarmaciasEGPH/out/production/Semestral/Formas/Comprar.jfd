@@ -1,0 +1,67 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:17:p, comp button3:::p:68:p}, seq l {space :p:28:p, par l:::p {seq {comp label3:::p::p, space :::x, comp JtextCant:::p:96:p}, seq {comp label2:::p::p, space s:::p, comp JtextID:::p:96:p}}}, seq l {space :p:129:p, par l {comp button1:::p::p, comp button2:::p::p, comp button4::l:p::p}}}, par l {seq {space :p:49:p, comp label1:::p::p, space ::262:x, comp label4:::p:201:p}, seq {space :p:35:p, comp scrollPane1::::581:x}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par l {seq l {space :p:17:p, par l {comp label1:::p::p, comp button3:::p:47:p}}, comp label4::l:p::p}, par l {seq {space :p:19:p, par b {comp label2::b:p::p, comp JtextID::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp JtextCant::b:p::p}, space :p:45:p, comp button1:::p::p, space s:::p, comp button2:::p::p, space :p:57:p, comp button4:::p::p}, seq l {space :::p, comp scrollPane1:::p:400:p}}, space ::80:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Comprar Productos"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "ID de medicamento"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Cantidad"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "JtextID"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "JtextIDKeyTyped", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "JtextCant"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "JtextCantKeyTyped", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Agregar Producto"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Eliminar Producto Seleccionado"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Logo EGHP.png" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Home.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "JTableDatos"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Hacer Factura"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 955, 605 )
+		} )
+	}
+}

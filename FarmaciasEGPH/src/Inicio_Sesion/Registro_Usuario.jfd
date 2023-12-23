@@ -1,0 +1,67 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:184:p, comp label1:::p::p}, seq l {space :p:198:p, comp button1:::p::p}, seq l {space :p:22:p, par l:::p {seq {comp label7:::p::p, space :::p, comp passPath:::::x}, seq l {par t {comp label2:::p::p, comp label3:::p::p}, space :::p, par l {comp nomPath:::p:396:p, comp dirPath:::::x}}, seq l {comp label4:::p::p, space s:::p, comp correoPath:::p:396:p}, seq l {comp label5:::p::p, space :::p, comp telPath:::p:367:p}, seq l {comp label6:::p::p, space :::p, comp fechaPath:::p:257:p}}}}, space ::69:x}}"
+			"$verticalGroup": "par l {seq l {space :p:19:p, comp label1:::p::p, space :p:25:p, par b {comp label2::b:p::p, comp nomPath::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp dirPath::b:p::p}, space s:::p, par b {comp label4::b:p::p, comp correoPath::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp telPath::b:p::p}, space s:::p, par b {comp label6::b:p::p, comp fechaPath::b:p::p}, space s:::p, par b {comp label7::b:p::p, comp passPath::b:p::p}, space ::18:x, comp button1:::p::p, space :p:30:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Rellena los campos requeridos"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Nombre"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Direccion"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Correo"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Telefono Movil"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Fecha de nacimiento (año-mes-dia)"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nomPath"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "dirPath"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "correoPath"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "telPath"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "fechaPath"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Registrar Usuario"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Contraseña"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "passPath"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 545, 440 )
+		} )
+	}
+}
